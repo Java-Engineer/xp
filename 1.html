@@ -3,11 +3,35 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
-		<title>首页</title>
+		<title>css 实现动画效果</title>
 		<meta name="description" content="Restyling jQuery UI Widgets and Elements" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 	</head>	
+	<style type="text/css">
+	.demo1{
+		border:1px solid black;
+	}
+	.demo1 h1{
+		width:100px;
+		height:100px;
+		margin:0px;
+		transform:translate(0px,0px) rotate(0deg);
+		background-color:red;
+		
+	}
+	.demo1:hover h1{
+		transition:all 5s;
+		width:200px;
+		height:200px;
+		background-color:white;
+		transform:translate(500px,0px) rotate(360deg);
+
+	}
+	
+	</style>
 	<body  style="background-color: #80ffff">
-	<h1 style="color:white">哈哈哈哈哈哈哈</h1>
+	
+	<h1 style="color:white">CSS3 实现动画效果</h1>
+	<div class="demo1"><h1></h1></div>
 	</body>
 </html>
